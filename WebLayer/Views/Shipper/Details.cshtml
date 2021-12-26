@@ -1,0 +1,58 @@
+﻿@model Business_layer.ViewModel.ShipperViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>shipperViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipperID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipperID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipperMethod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipperMethod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shipper_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shipper_date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

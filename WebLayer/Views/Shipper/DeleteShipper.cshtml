@@ -1,0 +1,64 @@
+﻿@model Business_layer.ViewModel.ShipperViewModel
+
+@{
+    ViewBag.Title = "DeleteShipper";
+}
+
+<h2>DeleteShipper</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>shipperViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipperID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipperID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShipperMethod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShipperMethod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.shipper_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.shipper_date)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Business_layer.ViewModel.productViewModel>
+@{
+    ViewBag.Title = "ShowProduct";
+}
+<form action="\Product\Search" method="get">
+    <input type="search" name="ptodName" class="form-control"
+           placeholder="Enter product NAme"
+           value="@ViewBag.ptodName" />
+    <input type="submit" value="Seach" />
+</form>
+<h2>ShowProduct</h2>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+@foreach (var item in Model)
+{
+<div style="width:300px;height:300px;float:left">
+    <img src="~/Content/@item.ProductImage" style="width:200px;height:200px" />
+    <h2>@item.ProductPrice $</h2>
+    <p>@item.ProductName</p>
+    <a href="/ShoppingCart/Index/@item.ProductID" class="btn btn-primary add-to-cart"><i class="fas fa-shopping-cart"></i>Add to cart</a>
+</div>
+}

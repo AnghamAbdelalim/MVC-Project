@@ -1,0 +1,110 @@
+﻿@model IEnumerable<Business_layer.ViewModel.productViewModel>
+
+@{
+    ViewBag.Title = "DetailsProduct";
+}
+
+<h2>DetailsProduct</h2>
+
+<div>
+    <h4>productViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductID)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.ProductID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.ProductDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.ProductPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducteDiscount)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.ProducteDiscount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AutherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.AutherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.ProductQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.ProductImage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfPage)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.NumberOfPage)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CategorysID)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.CategorysID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SuppliersID)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.SuppliersID)
+        </dd>
+         <dt>
+            @Html.DisplayNameFor(model => model.OrderDetailsID)
+        </dt>
+
+        <dd>
+            @Html.DisplayNameFor(model => model.OrderDetailsID)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+
+    @Html.ActionLink("Back to List", "Index")
+</p>
